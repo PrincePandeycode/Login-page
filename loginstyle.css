@@ -40,7 +40,7 @@ body::after {
     /* border-color: rgb(127,96,45); */
     border-color: rgb(77, 34, 45);
     /* box-shadow: 0 5px 10px rgba(127, 96, 45, 0.5) */
-     box-shadow: 0 5px 10px rgba(77, 34, 45, 0.857) 
+     box-shadow: 0 5px 10px rgba(77, 34, 45, 0.857) ;
 }
 
 .custom-b{
@@ -57,5 +57,9 @@ body::after {
 }
 
 .navig{
-  margin-bottom: 7%; 
+  margin-bottom: 5%;
+  /* background-color: hsla(341, 39%, 43%, 0.149);
+  box-shadow: 0 5px 10px rgba(77, 34, 45, 0.857) ; */
+  
 }
+
