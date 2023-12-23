@@ -4,11 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login Page</title>
+ 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <style> 
+  <!-- Add this line to include Font Awesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+ <style> 
    body {
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
+    /* overflow: hidden; */
 }
 
 body::after {
@@ -41,39 +46,59 @@ body::after {
     background-color: transparent; /* Set the background color for the :focus state */
     color: white;
    box-shadow: none;
-    /* border-color: rgb(127,96,45); */
+    border-color: rgb(127,96,45);
     box-shadow: 0 5px 10px rgba(127, 96, 45, 0.5)
 }
 
 .custom-b{
   color: white;
   text-decoration: underline;
-  background-color: rgba(127, 96, 45, 0.5);
+  /* background-color: rgba(127, 96, 45, 0.5); */
+  margin: 0%;
+  padding: 0%;
+  font-size: 90%;
   margin-left: 6px;
+ 
   
+
 }
+
+.navig{
+  margin-bottom: 7%; 
+}
+
 
 
   </style>
 </head>
 <body>
-
   
-  <div class=" navi container-fluid p-5 h2">
-    <div class="row ">
-      <div class="col  "> home</div>
-      <div class="col d-flex justify-content-center ">LoginPage</div>
-      <div class="col d-flex justify-content-end ">not a member? | <div class="btn btn-lg pb-3 custom-b"> Sign Up</div></div>
+  
+  <div class="navig container-fluid h4 p-3">
+    <div class="row align-items-center">
+      <div class="col-2">
+        <i class="fas fa-angle-left"></i>
+        <span class="d-none d-md-inline">Back to Store</span>
+      </div>
+      <div class="col-8 d-flex justify-content-center">
+        <img class="rounded-5" src="radiant.png" height="46px" width="140px" alt="">
+      </div>
+      <div class="col-2 d-flex justify-content-end">
+        <span class="d-none d-md-inline">Not a member? | </span>
+        <span class="btn  text-white custom-b">Sign Up</span>
+      </div>
     </div>
   </div>
-  <div class="row mt-5">
-    <div class="col-4"></div>
-    <div class="col ">
-
-      <div class="container border rounded-5 p-5">
-        <form action="">
+  
+ 
+  <div class="container-fluid ">
+    <div class="row mt-5">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <div class="container border rounded-5 p-5">
+          <form action="">
             <div class="row mb-4 ">
-                <label for="exampleFormControlInput1" class="form-label mb-3">Email </label>
+                <label for="exampleFormControlInput1" class="form-label mb-3">User Name </label>
                 <input type="email" class="form-control custom-input " id="exampleFormControlInput1" >
            
             </div>
@@ -82,14 +107,14 @@ body::after {
                 <input type="email" class="form-control custom-input " id="exampleFormControlInput1" >
            
             </div>
-    
+        
             <div class="form-check">
                 <input class="form-check-input custom-input" type="checkbox" value="" id="flexCheckChecked" >
                 <label class="form-check-label" for="flexCheckChecked">
                  <small> Keep me Signed in</small>
                 </label>
               </div>
-    
+        
               <div class="d-grid mt-4 mb-5">
                 <button class="btn btn-lg custom-btn text-white rounded-5" type="button">Sign In</button>
                
@@ -97,14 +122,14 @@ body::after {
                 <hr>
                 <div class="row d-flex justify-content-center"> forgot password </div>
         </form>
-        
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
     </div>
-      
-
-    </div>
-    <div class="col-4"></div>
   </div>
   
+  
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
