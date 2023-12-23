@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('bgimg2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(5px) brightness(30%);
+   z-index: -1;
+  
+}
+  .custom-btn{
+        background-color: rgb(127,96,45);
+        background-color: rgb(113, 36, 57);
+
+    }
+    .custom-input {
+    background-color: transparent;
+    border: 1px solid white; 
+    color: white;
+   border-color:rgb(127,96,45) ;
+   border-color: rgb(132, 60, 78);
+ padding: 10px;
+    transition: background-color 0.3s; 
+    outline:none;
+}
+
+.custom-input:focus{
+    background-color: transparent; 
+    color: white;
+   box-shadow: none;
+    /* border-color: rgb(127,96,45); */
+    border-color: rgb(77, 34, 45);
+    /* box-shadow: 0 5px 10px rgba(127, 96, 45, 0.5) */
+     box-shadow: 0 5px 10px rgba(77, 34, 45, 0.857) 
+}
+
+.custom-b{
+  color: white;
+  text-decoration: underline;
+
+  margin: 0%;
+  padding: 0%;
+  font-size: 90%;
+  margin-left: 6px;
+ 
+  
+
+}
+
+.navig{
+  margin-bottom: 7%; 
+}
